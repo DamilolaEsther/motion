@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion</title>
+    <style>
+        /* Background */
+        #forest {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            background-image: url('spookyForest.jpg');
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        /* Animal styles */
+        .animal {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+        }
+
+        #dino {
+            left: 30%;
+        }
+
+        #lion {
+            left: 60%;
+        }
+    </style>
+
+     <script src="anime.js" defer></script>
+
+</head>
+
+<body>
+    <h2>Motion</h2>
+    <button onclick="startRace()">Move It!</button>
+    <button onclick="stopRace()">Stop!</button>
+
+    <div id="forest">
+        <img id="dino" class="animal" src="dino0000.png" alt="Dino">
+        <img id="lion" class="animal" src="lionf0000.png" alt="Lioness">
+    </div>
+</body>
+</html>
